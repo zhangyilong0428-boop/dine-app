@@ -1,0 +1,18 @@
+{
+  "fried": [
+    { "name": "煎饺", "price": 15.00, "image": "fried_dumplings.jpg" },
+    { "name": "煎蛋", "price": 5.00, "image": "fried_egg.jpg" }
+  ],
+  "stir-fried": [
+    { "name": "炒饭", "price": 20.00, "image": "fried_rice.jpg" },
+    { "name": "炒面", "price": 18.00, "image": "fried_noodles.jpg" }
+  ],
+  "boiled": [
+    { "name": "水饺", "price": 12.00, "image": "boiled_dumplings.jpg" },
+    { "name": "馄饨", "price": 10.00, "image": "wonton.jpg" }
+  ],
+  "drinks": [
+    { "name": "可乐", "price": 5.00, "image": "coke.jpg" },
+    { "name": "橙汁", "price": 8.00, "image": "orange_juice.jpg" }
+  ]
+}
