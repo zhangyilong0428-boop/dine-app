@@ -1,7 +1,17 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 
-const menu = ref({});
+interface MenuItem {
+  name: string;
+  price: number;
+  image: string;
+}
+
+interface CartItem extends MenuItem {
+  quantity: number;
+}
+
+const menu = ref<Record<string, MenuItem[]>>({});
 
 onMounted(async () => {
   const response = await fetch('/menu.json');
@@ -19,7 +29,7 @@ const categories = [
 ];
 
 const activeCategory = ref('all');
-const cart = ref([]);
+const cart = ref<CartItem[]>([]);
 
 const menuItems = computed(() => {
   if (!menu.value || Object.keys(menu.value).length === 0) {
@@ -35,7 +45,7 @@ const totalPrice = computed(() => {
   return cart.value.reduce((total, item) => total + item.price * item.quantity, 0);
 });
 
-function addToCart(item) {
+function addToCart(item: MenuItem) {
   const existingItem = cart.value.find(cartItem => cartItem.name === item.name);
   if (existingItem) {
     existingItem.quantity++;
@@ -53,8 +63,9 @@ function checkout() {
   }
 }
 
-function handleImageError(e) {
-  e.target.src = 'https://placehold.co/200x150?text=No+Image';
+function handleImageError(e: Event) {
+  const target = e.target as HTMLImageElement;
+  target.src = 'https://placehold.co/200x150?text=No+Image';
 }
 </script>
 
