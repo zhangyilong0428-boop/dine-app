@@ -10,9 +10,11 @@ onMounted(async () => {
 
 const categories = [
   { key: 'all', name: '全部' },
-  { key: 'fried', name: '煎' },
   { key: 'stir-fried', name: '炒' },
   { key: 'boiled', name: '煮' },
+  { key: 'fried', name: '煎' },
+  { key: 'soup', name: '汤' },
+  { key: 'carbohydrates', name: '主食' },
   { key: 'drinks', name: '饮料' }
 ];
 
