@@ -25,7 +25,9 @@ const categories = [
   { key: 'fried', name: '煎' },
   { key: 'soup', name: '汤' },
   { key: 'carbohydrates', name: '主食' },
-  { key: 'drinks', name: '饮料' }
+  { key: 'drinks', name: '饮料' },
+  { key: 'desserts', name: '甜点' },
+  { key: 'cold dish', name: '凉菜' }
 ];
 
 const activeCategory = ref('all');
