@@ -21,7 +21,7 @@ onMounted(async () => {
 const categories = [
   { key: 'all', name: '全部' },
   { key: 'stir-fried', name: '炒' },
-  { key: 'boiled', name: '煮' },
+  { key: 'boiled', name: '煮,烧' },
   { key: 'fried', name: '煎' },
   { key: 'soup', name: '汤' },
   { key: 'carbohydrates', name: '主食' },
@@ -73,7 +73,9 @@ function handleImageError(e: Event) {
 
 <template>
   <header>
-    <h1>Dine餐厅</h1>
+    <h1>菜单</h1>
+    <h2>张艺泷总厨</h2>
+    <p>电话:13304672244(微信同号)</p>
   </header>
   <main>
     <div class="categories">

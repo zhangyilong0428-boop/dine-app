@@ -1,19 +1,29 @@
 {
   "stir-fried": [
-    { "name": "鱼香肉丝", "price": 10.00, "image": "fried_rice.jpg" },
-    { "name": "可乐鸡翅", "price": 18.00, "image": "fried_noodles.jpg" },
-    { "name": "西红柿鸡蛋", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "洋葱肥牛", "price": 18.00, "image": "fish_stir_fried.jpg" },
+    { "name": "鱼香肉丝", "price": 28.00, "image": "fried_rice.jpg" },
+    { "name": "可乐鸡翅", "price": 28.00, "image": "fried_noodles.jpg" },
+    { "name": "西红柿鸡蛋", "price": 10.00, "image": "fish_stir_fried.jpg" },
+    { "name": "洋葱肥牛", "price": 28.00, "image": "fish_stir_fried.jpg" },
     { "name": "西兰花虾仁", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "青椒肉丝", "price": 18.00, "image": "fish_stir_fried.jpg" },
+    { "name": "青椒肉丝", "price": 22.00, "image": "fish_stir_fried.jpg" },
     { "name": "黄瓜炒肉片", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "麻辣香锅", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "红烧肉", "price": 18.00, "image": "fish_stir_fried.jpg" }
+    { "name": "麻辣香锅", "price": 32.00, "image": "fish_stir_fried.jpg" },
+    { "name": "红烧肉", "price": 38.00, "image": "fish_stir_fried.jpg" },
+    { "name": "红烧茄子", "price": 18.00, "image": "fried_rice.jpg" },
+    { "name": "麻婆豆腐", "price": 28.00, "image": "fried_rice.jpg" },
+    { "name": "地三鲜", "price": 18.00, "image": "fish_stir_fried.jpg" },
+    { "name": "韭菜炒鸡蛋", "price": 8.00, "image": "fish_stir_fried.jpg" },
+    { "name": "渍菜粉", "price": 10.00, "image": "fish_stir_fried.jpg" },
+    { "name": "酱茄子", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "醋溜豆芽", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "蒜苔炒肉", "price": 18.00, "image": "fried_rice.jpg" },
+    { "name": "西葫芦炒鸡蛋", "price": 18.00, "image": "fried_rice.jpg" },
+    { "name": "宫保鸡丁", "price": 18.00, "image": "fried_rice.jpg" }
   ],
   "boiled": [
-    { "name": "酸菜骨头", "price": 12.00, "image": "boiled_dumplings.jpg" },
+    { "name": "酸菜骨头", "price": 28.00, "image": "boiled_dumplings.jpg" },
     { "name": "茄子炖土豆", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "111", "price": 18.00, "image": "fish_stir_fried.jpg" }
+    { "name": "番茄肥牛金针菇", "price": 28.00, "image": "fish_stir_fried.jpg" }
   ],
   "fried": [
     { "name": "煎饺", "price": 5.00, "image": "fried_dumplings.jpg" },
@@ -21,8 +31,8 @@
   ],
   "soup": [
     { "name": "豆腐汤", "price": 8.00, "image": "seaweed_soup.jpg" },
-    { "name": "紫菜汤", "price": 10.00, "image": "seaweed_egg_soup.jpg" },
-    { "name": "菠菜汤", "price": 18.00, "image": "fish_stir_fried.jpg" }
+    { "name": "紫菜汤", "price": 8.00, "image": "seaweed_egg_soup.jpg" },
+    { "name": "菠菜汤", "price": 8.00, "image": "fish_stir_fried.jpg" }
   ],
   "carbohydrates": [
     { "name": "米饭", "price": 5.00, "image": "rice.jpg" },
@@ -32,7 +42,8 @@
     { "name": "面包", "price": 6.00, "image": "bread.jpg" },
     { "name": "水饺", "price": 12.00, "image": "boiled_dumplings.jpg" },
     { "name": "麻辣烫", "price": 10.00, "image": "wonton.jpg" },
-    { "name": "烤冷面", "price": 10.00, "image": "fried_rice.jpg" }
+    { "name": "烤冷面", "price": 5.00, "image": "fried_rice.jpg" },
+    { "name": "饭包", "price": 8.00, "image": "fried_rice.jpg" }
   ],
   "drinks": [
     { "name": "可乐", "price": 5.00, "image": "coke.jpg" },
@@ -46,10 +57,17 @@
   ],
   "desserts": [
     { "name": "蛋糕", "price": 18.00, "image": "fish_stir_fried.jpg" },
-    { "name": "冰淇淋", "price": 18.00, "image": "fish_stir_fried.jpg" }
+    { "name": "冰淇淋", "price": 18.00, "image": "fish_stir_fried.jpg" },
+    { "name": "自己挑不会做", "price": 6.66, "image": "fish_stir_fried.jpg" }
   ],
   "cold dish": [
     { "name": "蘸酱菜", "price": 5.00, "image": "fries.jpg" },
-    { "name": "家凉", "price": 18.00, "image": "fried_noodles.jpg" }
+    { "name": "家凉", "price": 8.00, "image": "fried_noodles.jpg" },
+    { "name": "凉拌银耳", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "凉拌豆芽", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "凉拌黄瓜", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "凉拌西红柿", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "木耳沾辣根", "price": 8.00, "image": "fried_rice.jpg" },
+    { "name": "老虎菜（虎点的）", "price": 8.00, "image": "fried_rice.jpg" }
   ]
 }
