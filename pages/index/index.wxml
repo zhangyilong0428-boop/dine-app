@@ -1,0 +1,58 @@
+<view class="container">
+  <!-- 头部信息 -->
+  <view class="header">
+    <text class="title">菜单</text>
+    <text class="subtitle">张艺泷总厨</text>
+    <text class="phone">电话: 13304672244 (微信同号)</text>
+  </view>
+
+  <view class="main-content">
+    <!-- 左侧分类导航 -->
+    <scroll-view class="sidebar" scroll-y="true">
+      <view 
+        wx:for="{{categories}}" 
+        wx:key="key" 
+        class="category-item {{activeCategory === item.key ? 'active' : ''}}"
+        bindtap="selectCategory"
+        data-key="{{item.key}}"
+      >
+        {{item.name}}
+      </view>
+    </scroll-view>
+
+    <!-- 右侧菜品列表 -->
+    <scroll-view class="menu-list" scroll-y="true">
+      <view class="menu-item" wx:for="{{menuData[activeCategory]}}" wx:key="name">
+        <view class="item-info">
+          <text class="item-name">{{item.name}}</text>
+          <text class="item-price">￥{{item.price}}</text>
+        </view>
+        <button class="add-btn" bindtap="addToCart" data-item="{{item}}">+</button>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 底部购物车栏 -->
+  <view class="cart-bar">
+    <view class="cart-info" bindtap="toggleCart">
+      <text class="cart-icon">🛒</text>
+      <text class="total-price">￥{{totalPrice}}</text>
+    </view>
+    <button class="checkout-btn" bindtap="checkout">去结算</button>
+  </view>
+
+  <!-- 购物车详情弹窗 -->
+  <view class="cart-popup" wx:if="{{showCart}}">
+    <view class="cart-header">
+      <text>已选菜品</text>
+      <text class="close-btn" bindtap="toggleCart">关闭</text>
+    </view>
+    <scroll-view class="cart-items" scroll-y="true">
+      <view class="cart-item" wx:for="{{cart}}" wx:key="name">
+        <text class="cart-item-name">{{item.name}}</text>
+        <text class="cart-item-price">￥{{item.price * item.quantity}}</text>
+        <text class="cart-item-qty">x{{item.quantity}}</text>
+      </view>
+    </scroll-view>
+  </view>
+</view>
