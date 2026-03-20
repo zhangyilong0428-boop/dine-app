@@ -1,0 +1,25 @@
+<view class="container">
+  <image class="item-image" src="/images/{{item.image}}" mode="aspectFill"></image>
+  <view class="item-name">{{item.name}}</view>
+  <view class="item-price">￥{{item.price}}</view>
+
+  <view class="options-section" wx:if="{{item.options}}">
+    <view class="option-group" wx:for="{{item.options}}" wx:for-item="optionGroup" wx:key="type">
+      <view class="option-type">{{optionGroup.type}}</view>
+      <view class="option-values">
+        <text 
+          wx:for="{{optionGroup.values}}" 
+          wx:key="*this" 
+          class="option-value {{selectedOptions[optionGroup.type] === item ? 'selected' : ''}}"
+          bindtap="selectOption"
+          data-type="{{optionGroup.type}}"
+          data-value="{{item}}"
+        >
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <button class="add-to-cart-btn" bindtap="addToCart">加入购物车</button>
+</view>

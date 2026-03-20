@@ -11,75 +11,32 @@ Page({
   onLoad: function () {
     const menuData = {
       "stir-fried": [
-        { "name": "鱼香肉丝", "price": 28.00, "image": "fried_rice.jpg" },
-        { "name": "可乐鸡翅", "price": 28.00, "image": "fried_noodles.jpg" },
-        { "name": "西红柿鸡蛋", "price": 10.00, "image": "fish_stir_fried.jpg" },
-        { "name": "洋葱肥牛", "price": 28.00, "image": "fish_stir_fried.jpg" },
-        { "name": "西兰花虾仁", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "青椒肉丝", "price": 22.00, "image": "fish_stir_fried.jpg" },
-        { "name": "黄瓜炒肉片", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "麻辣香锅", "price": 32.00, "image": "fish_stir_fried.jpg" },
-        { "name": "红烧肉", "price": 38.00, "image": "fish_stir_fried.jpg" },
-        { "name": "红烧茄子", "price": 18.00, "image": "fried_rice.jpg" },
-        { "name": "麻婆豆腐", "price": 28.00, "image": "fried_rice.jpg" },
-        { "name": "地三鲜", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "韭菜炒鸡蛋", "price": 8.00, "image": "fish_stir_fried.jpg" },
-        { "name": "渍菜粉", "price": 10.00, "image": "fish_stir_fried.jpg" },
-        { "name": "酱茄子", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "醋溜豆芽", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "蒜苔炒肉", "price": 18.00, "image": "fried_rice.jpg" },
-        { "name": "西葫芦炒鸡蛋", "price": 18.00, "image": "fried_rice.jpg" },
-        { "name": "宫保鸡丁", "price": 18.00, "image": "fried_rice.jpg" },
-        { "name": "红烧日本豆腐", "price": 18.00, "image": "fish_stir_fried.jpg" }
+        { "name": "鱼香肉丝", "price": 28.00, "image": "yuxiangrousi.jpg", "options": [{ "type": "辣度", "values": ["不辣", "微辣", "中辣", "特辣"] }, { "type": "加料", "values": ["加饭", "加肉"] }] },
+        { "name": "可乐鸡翅", "price": 28.00, "image": "kelejichi.jpg" },
+        { "name": "西红柿鸡蛋", "price": 10.00, "image": "xihongshijidan.jpg" }
       ],
       "boiled": [
-        { "name": "酸菜骨头", "price": 12.00, "image": "boiled_dumplings.jpg" },
-        { "name": "茄子炖土豆", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "111", "price": 18.00, "image": "fish_stir_fried.jpg" }
+        { "name": "酸菜骨头", "price": 12.00, "image": "suancaigutou.jpg", "options": [{ "type": "辣度", "values": ["不辣", "微辣"] }] },
+        { "name": "茄子炖土豆", "price": 18.00, "image": "qiezidutudou.jpg" }
       ],
       "fried": [
-        { "name": "煎饺", "price": 5.00, "image": "fried_dumplings.jpg" },
-        { "name": "煎蛋", "price": 1.00, "image": "fried_egg.jpg" }
+        { "name": "煎饺", "price": 5.00, "image": "jianjiao.jpg" },
+        { "name": "煎蛋", "price": 1.00, "image": "jiandan.jpg" }
       ],
       "soup": [
-        { "name": "豆腐汤", "price": 8.00, "image": "seaweed_soup.jpg" },
-        { "name": "紫菜汤", "price": 10.00, "image": "seaweed_egg_soup.jpg" },
-        { "name": "菠菜汤", "price": 18.00, "image": "fish_stir_fried.jpg" }
+        { "name": "豆腐汤", "price": 8.00, "image": "doufutang.jpg" }
       ],
       "carbohydrates": [
-        { "name": "米饭", "price": 5.00, "image": "rice.jpg" },
-        { "name": "面条", "price": 8.00, "image": "noodles.jpg" },
-        { "name": "玉米", "price": 6.00, "image": "bread.jpg" },
-        { "name": "饼", "price": 7.00, "image": "cornbread.jpg" },
-        { "name": "面包", "price": 6.00, "image": "bread.jpg" },
-        { "name": "水饺", "price": 12.00, "image": "boiled_dumplings.jpg" },
-        { "name": "麻辣烫", "price": 10.00, "image": "wonton.jpg" },
-        { "name": "烤冷面", "price": 10.00, "image": "fried_rice.jpg" }
+        { "name": "米饭", "price": 5.00, "image": "mifan.jpg" }
       ],
       "drinks": [
-        { "name": "可乐", "price": 5.00, "image": "coke.jpg" },
-        { "name": "牛奶", "price": 8.00, "image": "milk.jpg" },
-        { "name": "果汁", "price": 8.00, "image": "orange_juice.jpg" },
-        { "name": "椰子水", "price": 8.00, "image": "sprite.jpg" },
-        { "name": "柠檬水", "price": 5.00, "image": "water.jpg" },
-        { "name": "水", "price": 5.00, "image": "water.jpg" },
-        { "name": "啤酒", "price": 8.00, "image": "sprite.jpg" },
-        { "name": "洋酒", "price": 18.00, "image": "fish_stir_fried.jpg" }
+        { "name": "可乐", "price": 5.00, "image": "kele.jpg" }
       ],
       "desserts": [
-        { "name": "蛋糕", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "冰淇淋", "price": 18.00, "image": "fish_stir_fried.jpg" },
-        { "name": "自己挑不会做", "price": 6.66, "image": "fish_stir_fried.jpg" }
+        { "name": "蛋糕", "price": 18.00, "image": "dangao.jpg" }
       ],
       "cold dish": [
-        { "name": "蘸酱菜", "price": 5.00, "image": "fries.jpg" },
-        { "name": "家凉", "price": 8.00, "image": "fried_noodles.jpg" },
-        { "name": "凉拌银耳", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "凉拌豆芽", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "凉拌黄瓜", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "凉拌西红柿", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "木耳沾辣根", "price": 8.00, "image": "fried_rice.jpg" },
-        { "name": "老虎菜（虎点的）", "price": 8.00, "image": "fried_rice.jpg" }
+        { "name": "蘸酱菜", "price": 5.00, "image": "zhanjiangcai.jpg" }
       ]
     };
 
@@ -110,6 +67,30 @@ Page({
     const item = e.currentTarget.dataset.item;
     let cart = this.data.cart;
     const existingItem = cart.find(cartItem => cartItem.name === item.name);
+
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cart.push({ ...item, quantity: 1 });
+    }
+
+    this.setData({ cart: cart });
+    this.calculateTotal();
+  },
+
+  navigateToDetail: function(e) {
+    const item = e.currentTarget.dataset.item;
+    wx.navigateTo({
+      url: `/pages/detail/detail?item=${encodeURIComponent(JSON.stringify(item))}`
+    });
+  },
+
+  addToCartFromDetail: function(item) {
+    let cart = this.data.cart;
+    const existingItem = cart.find(cartItem => 
+      cartItem.name === item.name && 
+      JSON.stringify(cartItem.selectedOptions) === JSON.stringify(item.selectedOptions)
+    );
 
     if (existingItem) {
       existingItem.quantity++;

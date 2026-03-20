@@ -22,12 +22,12 @@
 
     <!-- 右侧菜品列表 -->
     <scroll-view class="menu-list" scroll-y="true">
-      <view class="menu-item" wx:for="{{menuData[activeCategory]}}" wx:key="name">
+      <view class="menu-item" wx:for="{{menuData[activeCategory]}}" wx:key="name" bindtap="navigateToDetail" data-item="{{item}}">
         <view class="item-info">
           <text class="item-name">{{item.name}}</text>
           <text class="item-price">￥{{item.price}}</text>
         </view>
-        <button class="add-btn" bindtap="addToCart" data-item="{{item}}">+</button>
+        <button class="add-btn" catchtap="addToCart" data-item="{{item}}">+</button>
       </view>
     </scroll-view>
   </view>
